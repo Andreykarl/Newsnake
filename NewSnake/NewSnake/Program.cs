@@ -10,6 +10,7 @@ namespace NewSnake
     {
         static void Main(string[] args)
         {
+            1
         }
     }
 }
