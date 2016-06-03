@@ -10,26 +10,18 @@ namespace NewSnake
     {
         static void Main(string[] args)
         {
-            Point p1 = new Point(3, 4, '&');
-            p1.Draw();
 
-            Point p2 = new Point(9, 5, '%');
-            p2.Draw();
+            Console.SetBufferSize(80, 25);
 
-            List<int> numList = new List<int>();
+            hLine upline = new hLine(0, 78, 0, '+');
+            hLine downline = new hLine(0, 78, 24, '+');
+            wLine leftline = new wLine(0, 24, 0, '+');
+            wLine rightline = new wLine(0, 24, 78, '+');
 
-            numList.Add(0);
-            numList.Add(1);
-            numList.Add(2);
-
-            int x = numList[0];
-            int y = numList[1];
-            int z = numList[2];
-
-            foreach(int i in numList)
-            {
-                Console.WriteLine(i);
-            }
+            upline.Drow();
+            downline.Drow();
+            leftline.Drow();
+            rightline.Drow();
 
 
             Console.ReadLine();
