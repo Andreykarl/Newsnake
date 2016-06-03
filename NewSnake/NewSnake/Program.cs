@@ -16,6 +16,12 @@ namespace NewSnake
             p1.sym = '%';
             p1.Draw();
 
+            Point p2 = new Point();
+            p2.x = 6;
+            p2.y = 9;
+            p2.sym = '$';
+            p2.Draw();
+
             Console.ReadLine();
         }
     }
